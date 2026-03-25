@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Andro-Burp</string>
+    <string name="proxy_toggle">Proxy Status</string>
+    <string name="port_label">Port</string>
+    <string name="intercept">Intercept</string>
+    <string name="http_history">HTTP History</string>
+    <string name="repeater">Repeater</string>
+    <string name="forward">Forward</string>
+    <string name="drop">Drop</string>
+    <string name="edit">Edit</string>
+    <string name="send">Send</string>
+    
+    <!-- Credits -->
+    <string name="credits">Developed by brutozin.kov</string>
+    <string name="instagram">@arjunnnnnnn.nnn</string>
+    <string name="instagram_url">https://instagram.com/arjunnnnnnn.nnn</string>
+</resources>
