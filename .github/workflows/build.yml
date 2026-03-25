@@ -2,10 +2,11 @@ name: Build Andro-Burp APK
 
 on:
   push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
   workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
@@ -30,19 +31,9 @@ jobs:
     - name: Build Debug APK
       run: ./gradlew assembleDebug
     
-    - name: Upload Debug APK
+    - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: Andro-Burp-Debug
+        name: Andro-Burp
         path: app/build/outputs/apk/debug/*.apk
-        retention-days: 30
-    
-    - name: Build Release APK
-      run: ./gradlew assembleRelease
-    
-    - name: Upload Release APK
-      uses: actions/upload-artifact@v4
-      with:
-        name: Andro-Burp-Release
-        path: app/build/outputs/apk/release/*.apk
         retention-days: 30
